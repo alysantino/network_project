@@ -7,8 +7,8 @@ var readlistlogos=[];
 var ki= 0;
 var y=JSON.parse((fs.readFileSync("users.json")));
 var currentuser=null;
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
 const PORT = process.env.PORT || 3030;
 
 // view engine setup
@@ -313,7 +313,7 @@ app.post('/addreadlistleaves',function(req,res){
   })
 
 
-app.listen(3000);
+// app.listen(3000);
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
 });
